@@ -1,0 +1,17 @@
+#focal length
+22965.1 22905.4
+#resolution
+3482 5218
+#principal point
+1741 2609
+#distortion coeffs
+0.544052 -16.2741 0 0
+#camera transformation matrix 1
+Rotation Euler X Y Z (degrees): 0.701494 42.0314 2.07484
+Translation : 104.115	7.06966	114.286
+MATRIX :
+0.742291	-0.0280103	0.669492	104.115
+0.0268921	0.999566	0.0120036	7.06966
+-0.669538	0.00909388	0.742722	114.286
+0	0	0	1
+

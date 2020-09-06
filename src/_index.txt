@@ -1,0 +1,104 @@
+test_render.py:
+
+Doing some on-screen and off-screen rendering of the Emily mesh using pyrender
+
+-----------------------------------------
+
+modif_obj.py:
+
+Selecting the vertices (v) and faces (f) from face's .obj file in order
+to correct it
+
+-----------------------------------------
+
+landmark_detection.py
+
+Finds the landmarks on each image and adds a plot to show it for both the dlib
+and sfd method
+
+Part of this comes from the example code file detect_landmarks_in_image.py
+from https://github.com/1adrianb/face-alignment
+
+To run, use python3 landmark_detection.py [3D] [line]
+Use the 3D argument if you want a 3D plot of the face
+Use the line argument if you want the landmarks to be connected
+
+-----------------------------------------
+
+triangulation_from_model.py:
+
+Retrieves the information about each camera
+Retrieves the position of the red vertices on the mesh corresponding to
+landmarks
+Projects the landmarks onto each image plane
+Uses dlib and sfd to find every landmark on each image
+Triangulates the landmarks on each view pair in order to find an approximate 3D
+position
+Finds their closest vertex on the mesh and creates a new obj file where they
+are represented in blue
+Evaluates the best of the two methods (dlib / sfd) with these points
+
+-----------------------------------------
+
+test_laplacian_mesh_editing.py:
+
+Applies laplacian mesh editing to deform the original mesh using the
+triangulated landmarks as anchors
+
+For the module laplacian_meshes, credit to Chris Tralie and Brooks Mershon
+I just modified a few things in order to make it compatible with python3
+See https://github.com/bmershon/laplacian-meshes for more info
+
+-----------------------------------------
+
+checking_laplacian_mesh.py:
+
+Projecting the original mesh and the laplacian edited mesh in order to see if
+it fits well
+
+-----------------------------------------
+
+laplacian_editing.py:
+
+Implementing laplacian mesh editing using igl's cotangent matrix
+
+-----------------------------------------
+
+triangulation_other_database.py:
+
+Triangulation of the keypoints from the BEE10 database, transformation to fit
+the Emily mesh and laplacian editing
+
+-----------------------------------------
+
+mesh_helper.py:
+
+Helper functions for meshes
+
+-----------------------------------------
+
+io_keypoints.py:
+
+Functions to save and recover data about keypoints
+
+-----------------------------------------
+
+experiments_laplacian.py:
+
+Some experiments to see the difference laplacian editing makes if we use a
+surfacic mesh or a volumic one
+
+-----------------------------------------
+
+ image_warping.py:
+
+ Warping an image onto another using both meshes
+
+-----------------------------------------
+
+test_optical_flow.py:
+
+Testing optical flow with opencv
+Using https://docs.opencv.org/3.4/d4/dee/tutorial_optical_flow.html
+
+-----------------------------------------

@@ -1,0 +1,8 @@
+Emily_2_1.obj ; Emily_2_1.mtl  			-> 	Initial mesh (quads)
+Corrected_Emily_2_1.obj 			->	Initial mesh but with triangles
+Corrected_Emily_2_1_closed.obj 			->	Same but watertight
+Corrected_Emily_2_1_closed_color.obj		->	Manually added red points corresponding to keypoints
+closest_vertices_closed.obj			->	Added blue points reprensenting the vertices closest to the computed keypoints on the closed mesh
+closest_vertices_closed_bricolage.obj		->	Same but using only 2 views for the 5 points on the left and right
+laplacian_edition_bricolage_umbrella.obj	->	Applied laplacian mesh editing to closest_vertices_bricolage.obj using umbrella weights
+
