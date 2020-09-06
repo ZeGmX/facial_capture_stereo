@@ -8,8 +8,8 @@ The purpose of this project is to implement the facial capture method exposed in
 
 Get the project using one of the two following commands:
 ```
-git clone git@gitlab.inria.fr:lmulot/facial_capture_stereo.git
-git clone https://gitlab.inria.fr/lmulot/facial_capture_stereo.git
+git clone git@github.com:ZeGmX/facial_capture_stereo.git
+git clone https://github.com/ZeGmX/facial_capture_stereo.git
 ```
 
 Then you need to install the modules using:
